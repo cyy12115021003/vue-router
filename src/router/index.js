@@ -25,7 +25,7 @@ export default new Router({
                 {
                     path:'router2',
                     component:Router2,
-                    beforeEnter(to,form,next){
+                    beforeRouteEnter(to,from,next){
                         console.log('///',arguments);
                         setTimeout(()=>(next()),1000);
                     }
